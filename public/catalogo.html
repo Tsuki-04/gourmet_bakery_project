@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Meta básicos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Catálogo | Le Jardin de Berry</title>
+  <meta
+    name="description"
+    content="Explora el catálogo de Le Jardin de Berry con berlinas, cupcakes, galletas, macarons, mochis y pasteles artesanales."
+  />
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/catalogo.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/homepage/favicon/favicon.png" />
+</head>
+<body>
+
+  <!-- Header / Cabecera principal -->
+  <header class="site-header">
+    <div class="container header-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">Le Jardin de Berry</a>
+
+      <!-- Navegación principal -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html" class="active" aria-current="page">Catálogo</a></li>
+          <li><a href="encargos.html">Encargos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Iconos de usuario y carrito -->
+      <div class="header-icons">
+        <a href="login.html" class="icon-link" aria-label="Ir a la cuenta">
+          <img src="img/icons/user.png" alt="Cuenta" />
+        </a>
+        <a href="carrito.html" class="icon-link" aria-label="Ir al carrito">
+          <img src="img/icons/cart.png" alt="Carrito" />
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Hero del catálogo -->
+    <section class="catalog-hero">
+      <div class="container catalog-hero-content">
+        <p class="catalog-brand-name">Le Jardin de Berry</p>
+        <p class="section-label">CATÁLOGO</p>
+        <h1>Nuestras creaciones</h1>
+        <p class="catalog-subtitle">
+          Descubre nuestra selección de berlinas, cupcakes y otras elaboraciones
+          artesanales preparadas con mimo e ingredientes de calidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filtros del catálogo -->
+    <section class="catalog-filters-section">
+      <div class="container">
+        <div class="catalog-filters">
+          <button class="filter-btn active" type="button" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Berlinas</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Cupcakes</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Cookies</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Macarons</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Mochis</button>
+          <button class="filter-btn" type="button" aria-pressed="false">Pasteles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos del catálogo -->
+    <section class="catalog-products">
+      <div class="container">
+        <div class="catalog-grid">
+
+          <!-- Productos: Berlinas -->
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img\catalogo\filled_doughnut\chocolate_doughnut_1.jpg" alt="Berlina de chocolate" />
+            <div class="catalog-card-body">
+              <h3>Berlina de chocolate</h3>
+              <p>Masa esponjosa rellena de crema de chocolate suave y cremosa.</p>
+              <span class="price-tag">Desde 3,20€ / ud.</span>
+              <a href="producto.html?id=berlina-chocolate" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img\catalogo\filled_doughnut\cream_doughnut_1.jpg" alt="Berlina de crema pastelera" />
+            <div class="catalog-card-body">
+              <h3>Berlina de crema pastelera</h3>
+              <p>Clásica berlina rellena de crema pastelera ligera y delicada.</p>
+              <span class="price-tag">Desde 3,00€ / ud.</span>
+              <a href="producto.html?id=berlina-crema" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img/catalogo/filled_doughnut/jam_doughnut_1.png" alt="Berlina de fresa" />
+            <div class="catalog-card-body">
+              <h3>Berlina de fresa</h3>
+              <p>Rellena de mermelada de fresa con un toque dulce y afrutado.</p>
+              <span class="price-tag">Desde 3,00€ / ud.</span>
+              <a href="producto.html?id=berlina-fresa" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img/catalogo/filled_doughnut/pistachio_doughnut_1.png" alt="Berlina de pistacho" />
+            <div class="catalog-card-body">
+              <h3>Berlina de pistacho</h3>
+              <p>Crema de pistacho suave con topping de pistacho triturado.</p>
+              <span class="price-tag">Desde 3,60€ / ud.</span>
+              <a href="producto.html?id=berlina-pistacho" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img/catalogo/filled_doughnut/biscoff_doughnut_1.png" alt="Berlina Lotus Biscoff" />
+            <div class="catalog-card-body">
+              <h3>Berlina Lotus (Biscoff)</h3>
+              <p>Rellena de crema Lotus con crumble de galleta caramelizada.</p>
+              <span class="price-tag">Desde 3,80€ / ud.</span>
+              <a href="producto.html?id=berlina-lotus" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="berlinas">
+            <img src="img/catalogo/filled_doughnut/oreo_doughnut_1.png" alt="Berlina Oreo" />
+            <div class="catalog-card-body">
+              <h3>Berlina Oreo</h3>
+              <p>Rellena de crema suave de vainilla, cubierta con crumble de Oreo y coronada con una galleta entera.</p>
+              <span class="price-tag">Desde 3,90€ / ud.</span>
+              <a href="producto.html?id=berlina-oreo" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <!-- Productos: Cupcakes -->
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/choco_cupcakes_1.png" alt="Cupcake de chocolate" />
+            <div class="catalog-card-body">
+              <h3>Cupcake de chocolate</h3>
+              <p>Bizcocho de chocolate con crema suave de chocolate y acabado artesanal.</p>
+              <span class="price-tag">Desde 14,00€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-chocolate" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/lemon_vanilla_cupcakes_1.png" alt="Cupcake de vainilla y limón" />
+            <div class="catalog-card-body">
+              <h3>Cupcake de vainilla y limón</h3>
+              <p>Bizcocho suave con crema de vainilla y un toque fresco y delicado de limón.</p>
+              <span class="price-tag">Desde 14,40€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-vainilla-limon" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/redvelvet_cupcakes_1.jpg" alt="Cupcake Red Velvet" />
+            <div class="catalog-card-body">
+              <h3>Cupcake Red Velvet</h3>
+              <p>Bizcocho Red Velvet con crema suave y crumble de galleta red velvet.</p>
+              <span class="price-tag">Desde 14,80€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-red-velvet" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/strawberry_cupcakes_1.jpg" alt="Cupcake de nata con fresas" />
+            <div class="catalog-card-body">
+              <h3>Cupcake de nata y fresas</h3>
+              <p>Crema suave tipo nata coronada con fresas frescas de sabor dulce y ligero.</p>
+              <span class="price-tag">Desde 14,80€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-fresa-nata" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/cherry_cupcakes_1.jpg" alt="Cupcake de cereza" />
+            <div class="catalog-card-body">
+              <h3>Cupcake de cereza</h3>
+              <p>Crema ligera con cereza y fruta roja fresca, con una presentación elegante y especial.</p>
+              <span class="price-tag">Desde 15,20€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-cherry" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/blueberry_cupcakes_1.png" alt="Cupcake de arándanos y kinder" />
+            <div class="catalog-card-body">
+              <h3>Cupcake de arándanos y kinder</h3>
+              <p>Relleno de arándanos, crema suave y topping con blueberries y mini barrita kinder.</p>
+              <span class="price-tag">Desde 15,60€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-blueberry" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/oreo_cupcakes_1.jpg" alt="Cupcake Oreo" />
+            <div class="catalog-card-body">
+              <h3>Cupcake Oreo</h3>
+              <p>Bizcocho de chocolate con crema de galleta Oreo y una galleta Oreo como topping.</p>
+              <span class="price-tag">Desde 14,80€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-oreo" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cupcakes">
+            <img src="img/catalogo/cupcakes/mint_oreo_cupcakes_1.png" alt="Cupcake choco mint con crumble de Oreo" />
+            <div class="catalog-card-body">
+              <h3>Cupcake choco mint Oreo</h3>
+              <p>Chocolate con crema mint y crumble de Oreo para un contraste fresco e intenso.</p>
+              <span class="price-tag">Desde 15,20€ (4 uds)</span>
+              <a href="producto.html?id=cupcake-choco-mint" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+                    <!-- Productos: Cookies -->
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/milk_chocolate_cookies_1.png" alt="Cookie milk chocolate" />
+            <div class="catalog-card-body">
+              <h3>Cookie milk chocolate</h3>
+              <p>Cookie clásica de masa dorada con trozos de chocolate con leche, tierna por dentro y con un ligero acabado crujiente.</p>
+              <span class="price-tag">Desde 2,20€ / ud.</span>
+              <a href="producto.html?id=cookie-milk-chocolate" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/cookies_and_cream_cookies_1.jpg" alt="Cookie cookies and cream" />
+            <div class="catalog-card-body">
+              <h3>Cookie cookies and cream</h3>
+              <p>Cookie de masa suave con trozos de galleta tipo Oreo y chocolate blanco, cremosa y muy golosa.</p>
+              <span class="price-tag">Desde 2,40€ / ud.</span>
+              <a href="producto.html?id=cookie-cookies-and-cream" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/red_velvet_cookies_1.jpg" alt="Cookie red velvet" />
+            <div class="catalog-card-body">
+              <h3>Cookie red velvet</h3>
+              <p>Cookie red velvet de textura suave y color intenso, con trozos de chocolate blanco que aportan cremosidad y contraste.</p>
+              <span class="price-tag">Desde 2,50€ / ud.</span>
+              <a href="producto.html?id=cookie-red-velvet" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/lotus_cookies_1.jpg" alt="Cookie Lotus" />
+            <div class="catalog-card-body">
+              <h3>Cookie Lotus</h3>
+              <p>Cookie de masa suave con sabor caramelizado, acabada con crema Lotus y galleta speculoos en la superficie.</p>
+              <span class="price-tag">Desde 2,60€ / ud.</span>
+              <a href="producto.html?id=cookie-lotus" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/blueberry_cheesecake_cookies_1.jpg" alt="Cookie blueberry cheesecake" />
+            <div class="catalog-card-body">
+              <h3>Cookie blueberry cheesecake</h3>
+              <p>Cookie de masa suave con remolino cremoso tipo cheesecake y arándanos, equilibrada entre dulzor y sabor afrutado.</p>
+              <span class="price-tag">Desde 2,70€ / ud.</span>
+              <a href="producto.html?id=cookie-blueberry-cheesecake" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/raspberry_white chocolate_cookies_1.jpg" alt="Cookie raspberry white chocolate" />
+            <div class="catalog-card-body">
+              <h3>Cookie raspberry white chocolate</h3>
+              <p>Cookie de masa suave con frambuesa y trozos de chocolate blanco, equilibrada entre cremosidad, dulzor y un toque afrutado.</p>
+              <span class="price-tag">Desde 2,80€ / ud.</span>
+              <a href="producto.html?id=cookie-raspberry-white-chocolate" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/chocolate_covered_strawberry_cookies_1.jpg" alt="Cookie chocolate covered strawberry" />
+            <div class="catalog-card-body">
+              <h3>Cookie chocolate covered strawberry</h3>
+              <p>Cookie de cacao con trozos de fresa y acabado de chocolate, una combinación intensa con un punto afrutado.</p>
+              <span class="price-tag">Desde 2,80€ / ud.</span>
+              <a href="producto.html?id=cookie-chocolate-covered-strawberry" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/caramel_apple_cookies_1.jpg" alt="Cookie caramel apple" />
+            <div class="catalog-card-body">
+              <h3>Cookie caramel apple</h3>
+              <p>Cookie suave con trozos de manzana y acabado de caramelo, pensada para quienes buscan un sabor dulce y especiado.</p>
+              <span class="price-tag">Desde 2,70€ / ud.</span>
+              <a href="producto.html?id=cookie-caramel-apple" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/carrot_cake_cheesecake_cookies_1.jpg" alt="Cookie carrot cake cheesecake" />
+            <div class="catalog-card-body">
+              <h3>Cookie carrot cake cheesecake</h3>
+              <p>Cookie inspirada en la carrot cake, con masa suave, toque especiado y centro cremoso tipo cheesecake.</p>
+              <span class="price-tag">Desde 2,90€ / ud.</span>
+              <a href="producto.html?id=cookie-carrot-cake-cheesecake" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/white_chocolate_lime_cookies_1.jpg" alt="Cookie white chocolate lime" />
+            <div class="catalog-card-body">
+              <h3>Cookie white chocolate lime</h3>
+              <p>Cookie de masa suave con chocolate blanco y un toque cítrico de lima, fresca, ligera y diferente.</p>
+              <span class="price-tag">Desde 2,80€ / ud.</span>
+              <a href="producto.html?id=cookie-white-chocolate-lime" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="cookies">
+            <img src="img/catalogo/cookies/matcha_white_chocolate_cookies_1.png" alt="Cookie matcha white chocolate" />
+            <div class="catalog-card-body">
+              <h3>Cookie matcha white chocolate</h3>
+              <p>Cookie de té matcha con interior suave y trozos de chocolate blanco, equilibrada entre dulzor y notas vegetales.</p>
+              <span class="price-tag">Desde 2,90€ / ud.</span>
+              <a href="producto.html?id=cookie-matcha-white-chocolate" class="btn-outline">Ver producto</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form novedades -->
+     <section class="newsletter-cta">
+        <div class="container">
+          <div class="newsletter-cta-box">
+            <div class="newsletter-cta-content">
+              <p class="newsletter-cta-label">Novedades</p>
+              <h2 class="newsletter-cta-title">Sé el primero en enterarte de nuestras novedades más deliciosas</h2>
+              <p class="newsletter-cta-text">
+                Promos especiales, lanzamientos de temporada y preventas exclusivas.
+              </p>
+              <p class="newsletter-cta-text"> 
+                Si te gusta lo bueno… aquí siempre habrá algo recién salido del horno.
+              </p>
+            </div>
+
+            <form class="newsletter-cta-form" action="#" method="post">
+              <label for="newsletter-email" class="sr-only">Tu correo electrónico</label>
+              <input
+                type="email"
+                id="newsletter-email"
+                class="newsletter-cta-input"
+                placeholder="Tu correo electrónico"
+              />
+              <button type="submit" class="newsletter-cta-button">
+                Quiero recibir novedades
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Footer / Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Le Jardin de Berry. Todos los derechos reservados.</p>
+
+      <!-- Enlaces del footer -->
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="encargos.html">Encargos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts del catálogo -->
+  <script src="js/catalogo_filtros.js"></script>
+</body>
+</html>
