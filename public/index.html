@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Meta básicos -->
+  <!-- Basic meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO básico -->
+  <!-- Basic SEO -->
   <title>Le Jardin de Berry</title>
   <meta name="description" content="Pasteles elegantes y creaciones artesanales para celebraciones especiales en Le Jardin de Berry.">
 
-  <!-- Hojas de estilo -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/index_responsive.css">
 
@@ -18,18 +23,29 @@
 </head>
 <body>
 
-  <!-- Header / Cabecera principal -->
-  <header class="site-header">
-    <div class="container header-container">
+  <!-- Top announcement -->
+  <div class="top-announcement">
+    <p>
+      Encargos personalizados con 48-72h de antelación · Recogida en tienda · Opciones veganas disponibles
+    </p>
+  </div>
 
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">Le Jardin de Berry</a>
-      </div>
+  <!-- Main header -->
+  <header class="main-header">
+    <div class="container main-header__container">
 
-      <!-- Navegación principal -->
-      <nav class="main-nav" aria-label="Navegación principal">
-        <ul class="nav-list">
+      <!-- Brand logo -->
+      <a href="index.html" class="main-header__brand" aria-label="Ir al inicio de Le Jardin de Berry">
+        <img
+          src="img/homepage/hero/logo_le_jardin_de_berry.png"
+          alt="Logo de Le Jardin de Berry"
+          class="main-header__logo"
+        >
+      </a>
+
+      <!-- Main navigation -->
+      <nav class="main-header__nav" aria-label="Navegación principal">
+        <ul class="main-header__menu">
           <li><a href="index.html" aria-current="page">Inicio</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
           <li><a href="encargos.html">Encargos</a></li>
@@ -37,341 +53,1324 @@
         </ul>
       </nav>
 
-      <!-- Iconos de usuario y carrito -->
-      <div class="header-icons">
-        <a href="login.html" class="icon-link" aria-label="Ir a la cuenta">
-          <img src="img/icons/user.png" alt="Cuenta">
+      <!-- Header actions -->
+      <div class="main-header__actions">
+        <a href="login.html" class="main-header__icon" aria-label="Ir a la cuenta">
+          <img
+            src="img/homepage/decorative/icons/header/icon_user.svg"
+            alt="Cuenta"
+          >
         </a>
-        <a href="carrito.html" class="icon-link" aria-label="Ir al carrito">
-          <img src="img/icons/cart.png" alt="Carrito">
+
+        <a href="carrito.html" class="main-header__icon" aria-label="Ir al carrito">
+          <img
+            src="img/homepage/decorative/icons/header/icon_cart.svg"
+            alt="Carrito"
+          >
         </a>
       </div>
 
     </div>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- Main content -->
   <main>
 
-    <!-- Hero / Portada principal -->
-    <section class="hero">
-      <div class="container hero-container">
+    <!-- Home hero -->
+    <section class="home-hero" aria-labelledby="homeHeroTitle">
 
-        <!-- Texto principal del hero -->
-        <div class="hero-text">
-          <img src="img/homepage/hero/Le_Jardin_de_Berry_logo.png" alt="Logo de Le Jardin de Berry" class="hero-logo">
+      <!-- Hero background image -->
+      <img
+        src="img/homepage/hero/hero_bakery_interior.png"
+        alt="Interior de Le Jardin de Berry con una tarta decorada"
+        class="home-hero__background-image"
+      >
 
-          <h1>Pasteles elegantes para momentos que merecen quedarse</h1>
+      <!-- Hero overlay -->
+      <div class="home-hero__overlay"></div>
 
-          <p>
-            Descubre nuestras creaciones dulces, hechas con mimo, ingredientes frescos
-            y una presentación cuidada para convertir cada ocasión en algo especial.
-          </p>
+      <!-- Hero content card -->
+      <div class="home-hero__content-card">
+        <p class="home-hero__kicker">Pastelería gourmet artesanal</p>
 
-          <!-- Botones principales -->
-          <div class="hero-buttons">
-            <a href="catalogo.html" class="button button-main">Ver catálogo</a>
-            <a href="encargos.html" class="button button-light">Encargo personalizado</a>
-          </div>
+        <h1 id="homeHeroTitle" class="home-hero__title">
+          Dulces de autor para ocasiones especiales
+        </h1>
 
-          <!-- Datos o ventajas destacadas -->
-          <div class="hero-data">
-            <div class="hero-data-box">
-              <div class="hero-icon">
-                <img src="img/homepage/hero/ingredients.png" alt="Ingredientes frescos">
-              </div>
-              <h4>Ingredientes frescos</h4>
-              <p>Ingredientes seleccionados y opciones veganas disponibles.</p>
-            </div>
+        <p class="home-hero__description">
+          Bollería artesanal, tartas y encargos personalizados elaborados con ingredientes seleccionados
+          y una presentación cuidada.
+        </p>
 
-            <div class="hero-data-box">
-              <div class="hero-icon">
-                <img src="img/homepage/hero/handmade.png" alt="Artesanal">
-              </div>
-              <h4>100% artesanal</h4>
-              <p>Cada pastel se elabora a mano con cuidado y dedicación.</p>
-            </div>
+        <!-- Hero actions -->
+        <div class="home-hero__actions">
+          <a href="catalogo.html" class="home-hero__button home-hero__button--primary">
+            Ver catálogo
+          </a>
 
-            <div class="hero-data-box">
-              <div class="hero-icon">
-                <img src="img/homepage/hero/orders_icon.png" alt="Reservas">
-              </div>
-              <h4>Encargos y reservas</h4>
-              <p>Reserva tu tarta con antelación para celebraciones especiales.</p>
-            </div>
-          </div>
+          <a href="encargos.html" class="home-hero__button home-hero__button--secondary">
+            Encargar tarta
+          </a>
         </div>
-
-        <!-- Imagen principal del hero -->
-        <div class="hero-image">
-          <div class="hero-image-box">
-            <img src="img/homepage/hero/tartar_banner.jpg" alt="Tarta decorada de Le Jardin de Berry">
-            
-            <!-- Tarjeta flotante destacada -->
-            <div class="hero-card">
-              <p class="hero-card-top">Especial de la semana</p>
-              <p class="hero-card-title">Tarta floral de arándanos</p>
-            </div>
-          </div>
-        </div>
-
       </div>
+
     </section>
 
-    <!-- Productos destacados -->
-    <section class="featured-products section">
+    <!-- Featured products section -->
+    <section class="featured-products-section section">
       <div class="container">
 
-        <!-- Encabezado de sección -->
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="section-subtitle">Selección destacada</p>
-            <h2>Productos destacados</h2>
-          </div>
+        <!-- Section header -->
+        <div class="section-header featured-products-header">
+          <p class="section-kicker">Selección destacada</p>
 
-          <p class="section-text">
-            Una selección especial para entrar por los ojos desde el primer momento
-            y dirigir al usuario hacia el catálogo o la ficha del producto.
+          <h2>Favoritos de la maison</h2>
+
+          <!-- Decorative divider -->
+          <img
+            src="img/homepage/decorative/dividers/divider_maison.svg"
+            alt=""
+            class="featured-products-divider"
+            aria-hidden="true"
+          >
+
+          <p class="featured-products-intro">
+            Una selección de piezas artesanales elaboradas con ingredientes cuidados
+            y acabados delicados.
           </p>
         </div>
 
-        <!-- Tarjetas de productos -->
-        <div class="cards-grid">
+        <!-- Featured products grid -->
+        <div class="featured-products-grid">
 
-          <article class="product-card">
-            <img src="img/homepage/featured_products/red_fruit_cheesecake.jpg" alt="Cheesecake de frutos rojos">
-            <div class="card-content">
-              <div class="card-top">
-                <div>
+          <!-- Featured product card -->
+          <article class="featured-product-card">
+            <img
+              src="img/homepage/featured_products/red_berry_cheesecake.png"
+              alt="Cheesecake de frutos rojos"
+              class="featured-product-card__image"
+            >
+
+            <!-- Wishlist button -->
+            <button
+              type="button"
+              class="featured-product-card__wishlist"
+              aria-label="Añadir Cheesecake de frutos rojos a favoritos"
+            >
+              <img
+                src="img/homepage/decorative/icons/common/icon_heart_outline.svg"
+                alt=""
+                aria-hidden="true"
+              >
+            </button>
+
+            <div class="featured-product-card__content">
+
+              <!-- Product information -->
+              <div class="featured-product-card__header">
+
+                <!-- Product label -->
+                <p class="featured-product-card__tag">
+                  <img
+                    src="img/homepage/decorative/ornaments/ornament_gold_flower.svg"
+                    alt=""
+                    class="featured-product-card__tag-icon"
+                    aria-hidden="true"
+                  >
+                  Signature
+                </p>
+
+                <!-- Product title and price -->
+                <div class="featured-product-card__title-row">
                   <h3>Cheesecake de frutos rojos</h3>
-                  <p class="card-desc">
-                    Base crujiente, crema suave y frutos rojos frescos.
-                  </p>
+
+                  <span class="featured-product-card__price">
+                    Desde 30€
+                  </span>
                 </div>
-                <span class="card-price">Desde 30€</span>
+
+                <p class="featured-product-card__description">
+                  Cremosa, suave y decorada con frutos rojos frescos sobre una base crujiente.
+                </p>
               </div>
-              <a href="catalogo.html" class="button button-light card-button">Ver producto</a>
+
+              <!-- Product details -->
+              <p class="featured-product-card__meta">
+                <span>Tarta para compartir</span>
+              </p>
+
+              <a href="catalogo.html" class="button button-light featured-product-card__button">
+                Ver producto
+              </a>
+
             </div>
           </article>
 
-          <article class="product-card">
-            <img src="img/homepage/featured_products/matcha_tea_tiramisu.png" alt="Tiramisú de té matcha">
-            <div class="card-content">
-              <div class="card-top">
-                <div>
-                  <h3>Tiramisú de té matcha</h3>
-                  <p class="card-desc">
-                    Fusión delicada entre té matcha y crema mascarpone.
-                  </p>
+          <!-- Featured product card -->
+          <article class="featured-product-card">
+            <img
+              src="img/homepage/featured_products/pistachio_croissant.png"
+              alt="Croissant de pistacho"
+              class="featured-product-card__image"
+            >
+
+            <!-- Wishlist button -->
+            <button
+              type="button"
+              class="featured-product-card__wishlist"
+              aria-label="Añadir Croissant de pistacho a favoritos"
+            >
+              <img
+                src="img/homepage/decorative/icons/common/icon_heart_outline.svg"
+                alt=""
+                aria-hidden="true"
+              >
+            </button>
+
+            <div class="featured-product-card__content">
+
+              <!-- Product information -->
+              <div class="featured-product-card__header">
+
+                <!-- Product label -->
+                <p class="featured-product-card__tag">
+                  <img
+                    src="img/homepage/decorative/ornaments/ornament_gold_flower.svg"
+                    alt=""
+                    class="featured-product-card__tag-icon"
+                    aria-hidden="true"
+                  >
+                  Maison choice
+                </p>
+
+                <!-- Product title and price -->
+                <div class="featured-product-card__title-row">
+                  <h3>Croissant de pistacho</h3>
+
+                  <span class="featured-product-card__price">
+                    Desde 4,90€
+                  </span>
                 </div>
-                <span class="card-price">Desde 27€</span>
+
+                <p class="featured-product-card__description">
+                  Hojaldre dorado relleno de crema de pistacho y terminado con frutos secos.
+                </p>
               </div>
-              <a href="catalogo.html" class="button button-light card-button">Ver producto</a>
+
+              <!-- Product details -->
+              <p class="featured-product-card__meta">
+                <span>Hojaldre artesanal</span>
+                <span class="featured-product-card__meta-separator">·</span>
+                <span>Relleno cremoso</span>
+              </p>
+
+              <a href="catalogo.html" class="button button-light featured-product-card__button">
+                Ver producto
+              </a>
+
             </div>
           </article>
 
-          <article class="product-card">
-            <img src="img/homepage/featured_products/chocolate_tart.png" alt="Tarta ganache de chocolate">
-            <div class="card-content">
-              <div class="card-top">
-                <div>
-                  <h3>Tarta ganache de chocolate</h3>
-                  <p class="card-desc">
-                    Chocolate intenso con acabado elegante y sabor profundo.
-                  </p>
+          <!-- Featured product card -->
+          <article class="featured-product-card">
+            <img
+              src="img/homepage/featured_products/macaron_gift_box.jpg"
+              alt="Caja de macarons"
+              class="featured-product-card__image"
+            >
+
+            <!-- Wishlist button -->
+            <button
+              type="button"
+              class="featured-product-card__wishlist"
+              aria-label="Añadir Caja de macarons a favoritos"
+            >
+              <img
+                src="img/homepage/decorative/icons/common/icon_heart_outline.svg"
+                alt=""
+                aria-hidden="true"
+              >
+            </button>
+
+            <div class="featured-product-card__content">
+
+              <!-- Product information -->
+              <div class="featured-product-card__header">
+
+                <!-- Product label -->
+                <p class="featured-product-card__tag">
+                  <img
+                    src="img/homepage/decorative/ornaments/ornament_gold_flower.svg"
+                    alt=""
+                    class="featured-product-card__tag-icon"
+                    aria-hidden="true"
+                  >
+                  Ideal para regalar
+                </p>
+
+                <!-- Product title and price -->
+                <div class="featured-product-card__title-row">
+                  <h3>Caja de macarons</h3>
+
+                  <span class="featured-product-card__price">
+                    Desde 22€
+                  </span>
                 </div>
-                <span class="card-price">Desde 34€</span>
+
+                <p class="featured-product-card__description">
+                  Selección de macarons delicados en sabores variados, ideal para regalar o compartir.
+                </p>
               </div>
-              <a href="catalogo.html" class="button button-light card-button">Ver producto</a>
+
+              <!-- Product details -->
+              <p class="featured-product-card__meta">
+                <span>Caja regalo</span>
+                <span class="featured-product-card__meta-separator">·</span>
+                <span>Sabores variados</span>
+              </p>
+
+              <a href="catalogo.html" class="button button-light featured-product-card__button">
+                Ver producto
+              </a>
+
             </div>
           </article>
 
         </div>
-      </div>
-    </section>
 
-    <!-- Sección de esencia / presentación -->
-    <section class="gourmet section">
-      <div class="container gourmet-container">
+        <!-- Featured products action -->
+        <div class="featured-products-action">
 
-        <!-- Texto descriptivo -->
-        <div class="gourmet-text">
-          <p class="section-subtitle">Nuestra esencia</p>
-          <blockquote>
-            Deléitate con el sabor único de nuestras creaciones.
-          </blockquote>
-          <p class="gourmet-desc">
-            En Le Jardin de Berry cuidamos cada detalle, desde la selección de ingredientes
-            hasta la presentación final, para que cada creación transmita delicadeza
-            y calidad artesanal.
-          </p>
-          <a href="catalogo.html" class="button button-main">Ver catálogo</a>
-        </div>
+          <!-- Left decorative arrow -->
+          <img
+            src="img/homepage/decorative/dividers/divider_arrow_right.svg"
+            alt=""
+            class="featured-products-action__decor featured-products-action__decor--left"
+            aria-hidden="true"
+          >
 
-        <!-- Imagen decorativa -->
-        <div class="gourmet-image">
-          <img src="img/homepage/experience/experience_deco.jpg" alt="Cupcakes decorados">
-        </div>
+          <!-- Full catalog button -->
+          <a href="catalogo.html" class="featured-products-action__button">
+            <img
+              src="img/homepage/decorative/icons/catalog/icon_catalog.svg"
+              alt=""
+              class="featured-products-action__button-icon"
+              aria-hidden="true"
+            >
 
-      </div>
-    </section>
+            <span>Ver catálogo</span>
+          </a>
 
-    <!-- Encargos personalizados -->
-    <section class="custom-orders section">
-      <div class="container custom-orders-container">
+          <!-- Right decorative arrow -->
+          <img
+            src="img/homepage/decorative/dividers/divider_arrow_left.svg"
+            alt=""
+            class="featured-products-action__decor featured-products-action__decor--right"
+            aria-hidden="true"
+          >
 
-        <!-- Imagen de encargos -->
-        <div class="custom-orders-image">
-          <img src="img/homepage/orders_home/custom_birthday_cake.png" alt="Tarta personalizada para cumpleaños o eventos">
-        </div>
-
-        <!-- Texto de encargos -->
-        <div class="custom-orders-text">
-          <div class="section-heading section-heading-left">
-            <p class="section-subtitle">Encargos personalizados</p>
-            <h2>Tartas y creaciones especiales para celebraciones únicas</h2>
-            <p>
-              Realizamos encargos para cumpleaños, eventos, mesas dulces y ocasiones
-              especiales, adaptándonos al estilo, sabor y diseño que buscas.
-            </p>
-          </div>
-
-          <!-- Ventajas del servicio -->
-          <div class="custom-orders-boxes">
-            <div class="custom-box">
-              <h3>Diseño a medida</h3>
-              <p>Colores, temática, decoración y acabados personalizados.</p>
-            </div>
-
-            <div class="custom-box">
-              <h3>Asesoramiento cercano</h3>
-              <p>Te ayudamos a elegir el pastel ideal para tu ocasión.</p>
-            </div>
-          </div>
-
-          <!-- Botón de acción -->
-          <a href="encargos.html" class="button button-main">Solicitar presupuesto</a>
         </div>
 
       </div>
     </section>
 
-    <!-- Opiniones de clientes -->
-    <section class="reviews section">
+    <!-- Seasonal edition section -->
+    <section class="seasonal-edition-section section" aria-labelledby="seasonalEditionTitle">
       <div class="container">
 
-        <!-- Encabezado -->
-        <div class="section-heading">
-          <p class="section-subtitle">Opiniones</p>
+        <div class="seasonal-edition-panel">
+
+          <!-- Seasonal edition content -->
+          <div class="seasonal-edition-content">
+
+            <!-- Seasonal decorative icon -->
+            <img
+              src="img/homepage/decorative/icons/seasonal/icon_flower.svg"
+              alt=""
+              class="seasonal-edition-kicker-icon"
+              aria-hidden="true"
+            >
+
+            <p class="section-kicker">Edición de temporada</p>
+
+            <!-- Small seasonal divider -->
+            <img
+              src="img/homepage/decorative/dividers/divider_short_line.svg"
+              alt=""
+              class="seasonal-edition-kicker-line"
+              aria-hidden="true"
+            >
+
+            <h2 id="seasonalEditionTitle" class="seasonal-edition-title">
+              Sabores de primavera
+            </h2>
+
+            <!-- Decorative divider -->
+            <img
+              src="img/homepage/decorative/dividers/divider_maison.svg"
+              alt=""
+              class="seasonal-edition-divider"
+              aria-hidden="true"
+            >
+
+            <p class="seasonal-edition-description">
+              Una selección limitada de piezas frescas, florales y delicadas disponibles durante la temporada.
+            </p>
+
+            <!-- Seasonal benefits -->
+            <ul class="seasonal-edition-benefits">
+              <li>
+                <span class="icon-circle seasonal-edition-benefit-icon">
+                  <img
+                    src="img/homepage/decorative/icons/seasonal/icon_ingredients.svg"
+                    alt=""
+                    class="icon-circle__image"
+                    aria-hidden="true"
+                  >
+                </span>
+                <span>Ingredientes de temporada</span>
+              </li>
+
+              <li>
+                <span class="icon-circle seasonal-edition-benefit-icon">
+                  <img
+                    src="img/homepage/decorative/icons/seasonal/icon_leaf.svg"
+                    alt=""
+                    class="icon-circle__image"
+                    aria-hidden="true"
+                  >
+                </span>
+                <span>Sabores frescos y naturales</span>
+              </li>
+
+              <li>
+                <span class="icon-circle seasonal-edition-benefit-icon">
+                  <img
+                    src="img/homepage/decorative/icons/seasonal/icon_handmade.svg"
+                    alt=""
+                    class="icon-circle__image"
+                    aria-hidden="true"
+                  >
+                </span>
+                <span>Elaboración artesanal</span>
+              </li>
+            </ul>
+
+            <a href="catalogo.html" class="seasonal-edition-button">
+              Ver productos de temporada
+            </a>
+
+          </div>
+
+          <!-- Seasonal edition gallery -->
+          <div class="seasonal-edition-gallery">
+
+            <div class="seasonal-edition-image-box">
+              <img
+                src="img/homepage/seasonal/strawberry_mochi.png"
+                alt="Mochis de fresa de edición limitada"
+                class="seasonal-edition-image"
+              >
+
+              <div class="seasonal-edition-badge">
+                Edición limitada
+              </div>
+
+              <!-- Slider arrows, decorative for now -->
+              <button
+                type="button"
+                class="seasonal-edition-arrow seasonal-edition-arrow--prev"
+                aria-label="Ver producto anterior"
+              >
+                ‹
+              </button>
+
+              <button
+                type="button"
+                class="seasonal-edition-arrow seasonal-edition-arrow--next"
+                aria-label="Ver siguiente producto"
+              >
+                ›
+              </button>
+
+              <!-- Slider dots, decorative for now -->
+              <div class="seasonal-edition-dots" aria-hidden="true">
+                <span class="seasonal-edition-dot seasonal-edition-dot--active"></span>
+                <span class="seasonal-edition-dot"></span>
+                <span class="seasonal-edition-dot"></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Brand essence section -->
+    <section class="brand-essence-section section" id="nuestra-esencia">
+      <div class="container">
+
+        <!-- Brand essence panel -->
+        <div class="brand-essence-panel">
+
+          <!-- Main brand essence content -->
+          <div class="brand-essence-main">
+
+            <!-- Brand essence text -->
+            <div class="brand-essence-content">
+              <p class="section-kicker">Nuestra esencia</p>
+
+              <!-- Small decorative divider -->
+              <img
+                src="img/homepage/decorative/dividers/divider_short_line.svg"
+                alt=""
+                class="brand-essence-kicker-line"
+                aria-hidden="true"
+              >
+
+              <h2 class="brand-essence-title">
+                Deléitate con el
+                <span>sabor único</span>
+                de nuestras creaciones.
+              </h2>
+
+              <!-- Main decorative divider -->
+              <img
+                src="img/homepage/decorative/dividers/divider_maison.svg"
+                alt=""
+                class="brand-essence-divider"
+                aria-hidden="true"
+              >
+
+              <p class="brand-essence-description">
+                En <strong>Le Jardin de Berry</strong> cuidamos cada detalle, desde la
+                selección de ingredientes de primera calidad hasta la presentación final,
+                para que cada creación transmita delicadeza, pasión y autenticidad.
+              </p>
+
+              <a href="catalogo.html" class="button button-main brand-essence-button">
+                Ver catálogo completo
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <!-- Brand essence visual -->
+            <div class="brand-essence-visual">
+
+              <!-- Main image -->
+              <div class="brand-essence-image-frame">
+                <img
+                  src="img/homepage/brand_essence/purple_flower_macarons.jpg"
+                  alt="Macarons morados con forma de flor"
+                  class="brand-essence-image"
+                >
+              </div>
+
+              <!-- Artisan stamp -->
+              <img
+                src="img/homepage/decorative/badges/stamp_artisan.png"
+                alt=""
+                class="brand-essence-stamp"
+                aria-hidden="true"
+              >
+
+              <!-- Floating quote card -->
+              <div class="brand-essence-quote-card">
+                <span class="brand-essence-quote-mark" aria-hidden="true">“</span>
+
+                <p>
+                  Cada bocado es una experiencia que queremos compartir contigo.
+                </p>
+
+                <p class="brand-essence-signature">
+                  Le Jardin de Berry
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Brand essence values -->
+          <div class="brand-essence-values">
+
+            <article class="brand-essence-value-card">
+              <span class="icon-circle brand-essence-value-card__icon-wrap">
+                <img
+                  src="img/homepage/decorative/icons/brand_essence/icon_selected_ingredients.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Ingredientes seleccionados</h3>
+                <p>
+                  Ingredientes elegidos por su calidad, frescura y sabor.
+                </p>
+              </div>
+            </article>
+
+            <article class="brand-essence-value-card">
+              <span class="icon-circle brand-essence-value-card__icon-wrap">
+                <img
+                  src="img/homepage/decorative/icons/brand_essence/icon_handmade_process.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Elaboración artesanal</h3>
+                <p>
+                  Recetas cuidadas con un toque contemporáneo, hechas con dedicación.
+                </p>
+              </div>
+            </article>
+
+            <article class="brand-essence-value-card">
+              <span class="icon-circle brand-essence-value-card__icon-wrap">
+                <img
+                  src="img/homepage/decorative/icons/common/icon_heart_outline.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Hecho con amor</h3>
+                <p>
+                  Ponemos pasión en cada detalle para crear momentos inolvidables.
+                </p>
+              </div>
+            </article>
+
+            <article class="brand-essence-value-card">
+              <span class="icon-circle brand-essence-value-card__icon-wrap">
+                <img
+                  src="img/homepage/decorative/icons/brand_essence/icon_gift.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Para cada ocasión</h3>
+                <p>
+                  Creaciones únicas para celebrar lo importante con quienes más quieres.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Custom orders section -->
+    <section class="custom-orders-section section" id="encargos-personalizados" aria-labelledby="customOrdersTitle">
+      <div class="container">
+
+        <!-- Custom orders panel -->
+        <div class="custom-orders-panel">
+
+          <!-- Main custom orders layout -->
+          <div class="custom-orders-main">
+
+            <!-- Custom orders visual side -->
+            <div class="custom-orders-visual">
+
+              <!-- Main custom orders image -->
+              <div class="custom-orders-image-frame">
+                <img
+                  src="img/homepage/custom_orders/floral_wedding_cake.png"
+                  alt="Tarta personalizada decorada con flores para celebraciones especiales"
+                  class="custom-orders-image"
+                >
+              </div>
+
+              <!-- Floating reservation card -->
+              <div class="custom-orders-note-card">
+                <span class="icon-circle custom-orders-note-card__icon-wrap">
+                  <img
+                    src="img/homepage/decorative/icons/custom_orders/icon_reservation_calendar.svg"
+                    alt=""
+                    class="icon-circle__image"
+                    aria-hidden="true"
+                  >
+                </span>
+
+                <div>
+                  <h3>Reserva con antelación</h3>
+                  <p>
+                    Te recomendamos hacer tu encargo con al menos 7 días de antelación.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Custom orders content side -->
+            <div class="custom-orders-content">
+
+              <!-- Custom orders heading -->
+              <div class="custom-orders-header">
+                <p class="section-kicker">Encargos personalizados</p>
+
+                <h2 id="customOrdersTitle" class="custom-orders-title">
+                  Tartas, dulces y detalles hechos para ti
+                </h2>
+
+                <!-- Decorative divider -->
+                <img
+                  src="img/homepage/decorative/dividers/divider_maison.svg"
+                  alt=""
+                  class="custom-orders-divider"
+                  aria-hidden="true"
+                >
+
+                <p class="custom-orders-description">
+                  Creamos piezas únicas para cumpleaños, eventos, mesas dulces, bautizos,
+                  comuniones, bodas y cualquier ocasión especial. Cuéntanos tu idea y la
+                  hacemos realidad.
+                </p>
+              </div>
+
+              <!-- Custom orders feature cards -->
+              <div class="custom-orders-features">
+
+                <article class="custom-orders-feature-card">
+                  <span class="icon-circle custom-orders-feature-card__icon-wrap">
+                    <img
+                      src="img/homepage/decorative/icons/custom_orders/icon_custom_design.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <h3>Diseño a medida</h3>
+
+                  <p>
+                    Colores, temática, decoración y acabados personalizados.
+                  </p>
+                </article>
+
+                <article class="custom-orders-feature-card">
+                  <span class="icon-circle custom-orders-feature-card__icon-wrap">
+                    <img
+                      src="img/homepage/decorative/icons/custom_orders/icon_advice.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <h3>Asesoramiento cercano</h3>
+
+                  <p>
+                    Te guiamos para elegir el pastel ideal según tu evento y número de invitados.
+                  </p>
+                </article>
+
+                <article class="custom-orders-feature-card">
+                  <span class="icon-circle custom-orders-feature-card__icon-wrap">
+                    <img
+                      src="img/homepage/decorative/icons/custom_orders/icon_delivery.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <h3>Recogida o entrega</h3>
+
+                  <p>
+                    Puedes recoger tu pedido en tienda o solicitar entrega a domicilio.
+                  </p>
+                </article>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Additional custom orders options -->
+          <div class="custom-orders-extra">
+
+            <!-- Extra orders intro -->
+            <div class="custom-orders-extra__intro">
+              <div>
+                <h3>También podemos preparar...</h3>
+
+                <img
+                  src="img/homepage/decorative/dividers/divider_maison.svg"
+                  alt=""
+                  class="custom-orders-extra__divider"
+                  aria-hidden="true"
+                >
+
+                <p>
+                  Más opciones dulces y detalles para cada ocasión especial.
+                </p>
+              </div>
+            </div>
+
+            <!-- Extra orders group -->
+            <div class="custom-orders-extra__group">
+              <span class="icon-circle custom-orders-extra__group-icon">
+                <img
+                  src="img/homepage/decorative/icons/custom_orders/icon_cupcake.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <h4>Pequeños dulces</h4>
+
+              <ul>
+                <li>Cupcakes</li>
+                <li>Cookies decoradas</li>
+                <li>Cake pops</li>
+              </ul>
+            </div>
+
+            <!-- Extra orders group -->
+            <div class="custom-orders-extra__group">
+              <span class="icon-circle custom-orders-extra__group-icon">
+                <img
+                  src="img/homepage/decorative/icons/custom_orders/icon_sweet_table.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <h4>Mesas y detalles</h4>
+
+              <ul>
+                <li>Mesas dulces</li>
+                <li>Detalles comestibles</li>
+                <li>Regalos personalizados</li>
+              </ul>
+            </div>
+
+            <!-- Extra orders group -->
+            <div class="custom-orders-extra__group">
+              <span class="icon-circle custom-orders-extra__group-icon">
+                <img
+                  src="img/homepage/decorative/icons/custom_orders/icon_macaron.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <h4>Favoritos gourmet</h4>
+
+              <ul>
+                <li>Macarons</li>
+                <li>Brownies</li>
+                <li>Y mucho más...</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Custom orders action area -->
+          <div class="custom-orders-action">
+            <a href="encargos.html" class="button button-main custom-orders-button">
+              Solicitar presupuesto
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <div class="custom-orders-help">
+              <span class="icon-circle custom-orders-help__icon">
+                <img
+                  src="img/homepage/decorative/icons/custom_orders/icon_email.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <p class="custom-orders-help-text">
+                ¿Tienes dudas? Escríbenos y te ayudamos encantados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Custom orders category bar -->
+          <div class="custom-orders-category-bar" aria-label="Tipos de encargos disponibles">
+
+            <a href="encargos.html#cumpleanos" class="custom-orders-category">
+              <img
+                src="img/homepage/decorative/icons/custom_orders/icon_birthday.svg"
+                alt=""
+                aria-hidden="true"
+              >
+              <span>Cumpleaños</span>
+            </a>
+
+            <span class="custom-orders-category-separator" aria-hidden="true">•</span>
+
+            <a href="encargos.html#eventos" class="custom-orders-category">
+              <img
+                src="img/homepage/decorative/icons/custom_orders/icon_events.svg"
+                alt=""
+                aria-hidden="true"
+              >
+              <span>Eventos</span>
+            </a>
+
+            <span class="custom-orders-category-separator" aria-hidden="true">•</span>
+
+            <a href="encargos.html#mesas-dulces" class="custom-orders-category">
+              <img
+                src="img/homepage/decorative/icons/custom_orders/icon_sweet_tables.svg"
+                alt=""
+                aria-hidden="true"
+              >
+              <span>Mesas dulces</span>
+            </a>
+
+            <span class="custom-orders-category-separator" aria-hidden="true">•</span>
+
+            <a href="encargos.html#ocasiones-especiales" class="custom-orders-category">
+              <img
+                src="img/homepage/decorative/icons/custom_orders/icon_special_occasions.svg"
+                alt=""
+                aria-hidden="true"
+              >
+              <span>Ocasiones especiales</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Customer reviews section -->
+    <section class="customer-reviews-section section">
+      <div class="container">
+
+        <!-- Section header -->
+        <div class="section-header customer-reviews-header">
+          <p class="section-kicker">Opiniones</p>
+
           <h2>Lo que opinan nuestros clientes</h2>
+
+          <img
+            src="img/homepage/decorative/dividers/divider_maison.svg"
+            alt=""
+            class="customer-reviews-divider"
+            aria-hidden="true"
+          >
+
           <p>Algunas valoraciones de quienes ya han probado nuestras creaciones.</p>
         </div>
 
-        <!-- Grid de reseñas -->
-        <div class="reviews-grid">
-          <article class="review-card">
-            <p class="stars">★★★★★</p>
+        <!-- Customer reviews grid -->
+        <div class="customer-reviews-grid">
+
+          <article class="customer-review-card">
+            <p class="customer-review-card__rating">★★★★★</p>
+
             <p>
               La mejor tarta que hemos probado para cumpleaños. Deliciosa,
               fresca y muy bien presentada.
             </p>
-            <h3>Marta R.</h3>
-            <span class="review-extra">Tarta de cumpleaños personalizada</span>
+
+            <div class="customer-review-card__client">
+              <span class="icon-circle customer-review-card__avatar">
+                <img
+                  src="img/homepage/decorative/icons/reviews/icon_customer_avatar.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Marta R.</h3>
+
+                <span class="customer-review-card__context">
+                  Tarta de cumpleaños personalizada
+                </span>
+              </div>
+            </div>
           </article>
 
-          <article class="review-card">
-            <p class="stars">★★★★★</p>
+          <article class="customer-review-card">
+            <p class="customer-review-card__rating">★★★★★</p>
+
             <p>
               Las galletas son increíbles, la textura perfecta y el sabor exquisito.
               Servicio impecable y muy amable.
             </p>
-            <h3>Ana G.</h3>
-            <span class="review-extra">Caja variada para regalo</span>
+
+            <div class="customer-review-card__client">
+              <span class="icon-circle customer-review-card__avatar">
+                <img
+                  src="img/homepage/decorative/icons/reviews/icon_customer_avatar.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Ana G.</h3>
+
+                <span class="customer-review-card__context">
+                  Caja variada para regalo
+                </span>
+              </div>
+            </div>
           </article>
 
-          <article class="review-card">
-            <p class="stars">★★★★☆</p>
+          <article class="customer-review-card">
+            <p class="customer-review-card__rating">★★★★☆</p>
+
             <p>
               Los cupcakes fueron una delicia, nos encantó cada detalle.
               Repetiremos para futuros eventos.
             </p>
-            <h3>Laura M.</h3>
-            <span class="review-extra">Encargo para celebración familiar</span>
+
+            <div class="customer-review-card__client">
+              <span class="icon-circle customer-review-card__avatar">
+                <img
+                  src="img/homepage/decorative/icons/reviews/icon_customer_avatar.svg"
+                  alt=""
+                  class="icon-circle__image"
+                  aria-hidden="true"
+                >
+              </span>
+
+              <div>
+                <h3>Laura M.</h3>
+
+                <span class="customer-review-card__context">
+                  Encargo para celebración familiar
+                </span>
+              </div>
+            </div>
           </article>
+
         </div>
 
-        <!-- Botón de más opiniones -->
-        <div class="reviews-action">
-          <a href="opiniones.html" class="button button-light reviews-button">Ver más opiniones</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="contact section">
-      <div class="container contact-container">
-
-        <!-- Información de contacto -->
-        <div class="contact-info">
-          <div class="section-heading section-heading-left">
-            <p class="section-subtitle">Contacto</p>
-            <h2>Contáctanos</h2>
-            <p>Estamos aquí para endulzar tus momentos especiales.</p>
-          </div>
-
-          <ul class="contact-list">
-            <li>📍 Av. del Sabor 123, Ciudad</li>
-            <li>📞 <a href="tel:123456789">123 456 789</a></li>
-            <li>✉ <a href="mailto:contacto@lejardindeberry.com">contacto@lejardindeberry.com</a></li>
-          </ul>
-        </div>
-
-        <!-- Imagen de contacto -->
-        <div class="contact-image">
-          <img src="img/contacto.jpg" alt="Pastel y decoración de pastelería">
+        <!-- Reviews action -->
+        <div class="customer-reviews-action">
+          <a href="opiniones.html" class="button button-main customer-reviews-button">
+            Ver más opiniones
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
 
       </div>
     </section>
-    <!-- Form novedades -->
-     <section class="newsletter-cta">
-        <div class="container">
-          <div class="newsletter-cta-box">
-            <div class="newsletter-cta-content">
-              <p class="newsletter-cta-label">Novedades</p>
-              <h2 class="newsletter-cta-title">Sé el primero en enterarte de nuestras novedades más deliciosas</h2>
-              <p class="newsletter-cta-text">
-                Promos especiales, lanzamientos de temporada y preventas exclusivas.
-              </p>
-              <p class="newsletter-cta-text"> 
-                Si te gusta lo bueno… aquí siempre habrá algo recién salido del horno.
-              </p>
+
+    <!-- Contact section -->
+    <section class="contact-section section" id="contacto" aria-labelledby="contactTitle">
+      <div class="container">
+
+        <!-- Contact panel -->
+        <div class="contact-panel">
+
+          <div class="contact-layout">
+
+            <!-- Contact content -->
+            <div class="contact-content">
+
+              <!-- Contact heading -->
+              <div class="contact-header">
+                <p class="section-kicker">Contacto</p>
+
+                <img
+                  src="img/homepage/decorative/dividers/divider_maison.svg"
+                  alt=""
+                  class="contact-kicker-divider"
+                  aria-hidden="true"
+                >
+
+                <h2 id="contactTitle" class="contact-title">
+                  Contáctanos
+                </h2>
+
+                <p class="contact-intro">
+                  Estamos aquí para ayudarte con encargos, pedidos y celebraciones especiales en Madrid.
+                </p>
+              </div>
+
+              <!-- Contact details -->
+              <ul class="contact-info-list">
+
+                <li class="contact-info-item">
+                  <span class="icon-circle contact-info-item__icon">
+                    <img
+                      src="img/homepage/decorative/icons/contact/icon_location.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <div>
+                    <span class="contact-info-item__label">Dirección</span>
+                    <p>
+                      Calle de Ayala 82, Salamanca,<br>
+                      28001 Madrid
+                    </p>
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <span class="icon-circle contact-info-item__icon">
+                    <img
+                      src="img/homepage/decorative/icons/contact/icon_email.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <div>
+                    <span class="contact-info-item__label">Correo electrónico</span>
+                    <p>
+                      <a href="mailto:contacto@lejardindeberry.com">contacto@lejardindeberry.com</a>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <span class="icon-circle contact-info-item__icon">
+                    <img
+                      src="img/homepage/decorative/icons/contact/icon_phone.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <div>
+                    <span class="contact-info-item__label">Teléfono fijo</span>
+                    <p>
+                      <a href="tel:+34913456789">+34 913 45 67 89</a>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="contact-info-item">
+                  <span class="icon-circle contact-info-item__icon">
+                    <img
+                      src="img/homepage/decorative/icons/contact/icon_whatsapp.svg"
+                      alt=""
+                      class="icon-circle__image"
+                      aria-hidden="true"
+                    >
+                  </span>
+
+                  <div>
+                    <span class="contact-info-item__label">WhatsApp</span>
+                    <p>
+                      <a href="https://wa.me/34612345678" target="_blank" rel="noopener noreferrer">
+                        +34 612 34 56 78
+                      </a>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+
+              <!-- Contact actions -->
+              <div class="contact-actions">
+                <a href="encargos.html" class="button button-main contact-button contact-button--main">
+                  Solicitar encargo
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Calle+de+Ayala+82+Madrid"
+                  class="button button-light contact-button contact-button--secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/homepage/decorative/icons/contact/icon_map_pin.svg"
+                    alt=""
+                    aria-hidden="true"
+                  >
+                  <span>Cómo llegar</span>
+                </a>
+              </div>
+
+              <!-- Custom order reminder -->
+              <div class="contact-custom-card">
+                <span class="icon-circle contact-custom-card__icon">
+                  <img
+                    src="img/homepage/decorative/icons/contact/icon_personal_order.svg"
+                    alt=""
+                    class="icon-circle__image"
+                    aria-hidden="true"
+                  >
+                </span>
+
+                <div>
+                  <h3>Pedidos personalizados y atención cercana</h3>
+                  <p>
+                    Cada detalle importa. Cuéntanos tu idea y la haremos realidad.
+                  </p>
+                </div>
+              </div>
+
             </div>
 
-            <form class="newsletter-cta-form" action="#" method="post">
-              <label for="newsletter-email" class="sr-only">Tu correo electrónico</label>
-              <input
-                type="email"
-                id="newsletter-email"
-                class="newsletter-cta-input"
-                placeholder="Tu correo electrónico"
-              />
-              <button type="submit" class="newsletter-cta-button">
-                Quiero recibir novedades
-              </button>
-            </form>
+            <!-- Contact map area -->
+            <div class="contact-map-area">
+
+              <!-- Map image -->
+              <div
+                class="contact-map-frame"
+                aria-label="Mapa ilustrado de la ubicación de Le Jardin de Berry en el barrio de Salamanca, Madrid"
+              >
+                <img
+                  src="img/homepage/contact/contact_map_salamanca.png"
+                  alt=""
+                  class="contact-map-image"
+                  aria-hidden="true"
+                >
+
+                <!-- Brand card over the map -->
+                <div class="contact-map-brand-card">
+                  <img
+                    src="img/homepage/hero/logo_le_jardin_de_berry.png"
+                    alt=""
+                    class="contact-map-brand-card__logo"
+                    aria-hidden="true"
+                  >
+
+                  <p>Le Jardin de Berry</p>
+                  <span>Madrid · Salamanca</span>
+                </div>
+
+                <!-- Map pin -->
+                <div class="contact-map-pin" aria-hidden="true">
+                  <span>B</span>
+                </div>
+              </div>
+
+              <!-- Opening hours -->
+              <div class="contact-hours-card" aria-labelledby="contactHoursTitle">
+                <div class="contact-hours-header">
+                  <h3 id="contactHoursTitle">Horario de atención</h3>
+
+                  <img
+                    src="img/homepage/decorative/dividers/divider_maison.svg"
+                    alt=""
+                    class="contact-hours-divider"
+                    aria-hidden="true"
+                  >
+                </div>
+
+                <dl class="contact-hours-list">
+                  <div class="contact-hours-row">
+                    <dt>Lunes</dt>
+                    <dd>9:00 – 14:00</dd>
+                  </div>
+
+                  <div class="contact-hours-row">
+                    <dt>Martes a Viernes</dt>
+                    <dd>9:00 – 14:00 / 16:00 – 20:00</dd>
+                  </div>
+
+                  <div class="contact-hours-row">
+                    <dt>Sábado</dt>
+                    <dd>9:00 – 15:00 / 16:00 – 20:00</dd>
+                  </div>
+
+                  <div class="contact-hours-row">
+                    <dt>Domingo</dt>
+                    <dd>Cerrado</dd>
+                  </div>
+                </dl>
+
+                <p class="contact-hours-note">
+                  Horario sujeto a cambios en festivos y fechas especiales.
+                </p>
+              </div>
+
+            </div>
+
           </div>
+
         </div>
-      </section>
+
+      </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-panel">
+
+          <!-- Newsletter content -->
+          <div class="newsletter-panel__content">
+            <p class="newsletter-panel__label">Novedades</p>
+
+            <h2 class="newsletter-panel__title">
+              Sé el primero en enterarte de nuestras novedades más deliciosas
+            </h2>
+
+            <p class="newsletter-panel__text">
+              Promos especiales, lanzamientos de temporada y preventas exclusivas.
+            </p>
+
+            <p class="newsletter-panel__text">
+              Si te gusta lo bueno… aquí siempre habrá algo recién salido del horno.
+            </p>
+          </div>
+
+          <!-- Newsletter form -->
+          <form class="newsletter-form" action="#" method="post">
+            <label for="newsletter-email" class="sr-only">Tu correo electrónico</label>
+
+            <input
+              type="email"
+              id="newsletter-email"
+              class="newsletter-form__input"
+              placeholder="Tu correo electrónico"
+            >
+
+            <button type="submit" class="newsletter-form__button">
+              Quiero recibir novedades
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer / Pie de página -->
-  <footer class="site-footer">
-    <div class="container footer-container">
+  <!-- Main footer -->
+  <footer class="main-footer">
+    <div class="container main-footer__container">
       <p>&copy; 2026 Le Jardin de Berry. Todos los derechos reservados.</p>
 
-      <!-- Enlaces del footer -->
-      <div class="footer-links">
+      <!-- Footer links -->
+      <div class="main-footer__links">
         <a href="index.html">Inicio</a>
         <a href="catalogo.html">Catálogo</a>
         <a href="encargos.html">Encargos</a>
@@ -380,5 +1379,6 @@
     </div>
   </footer>
 
+  <script src="js/temporada_carrusel.js"></script>
 </body>
 </html>

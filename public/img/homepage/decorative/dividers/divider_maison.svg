@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 44" role="img" aria-label="Decorative gold divider">
+  <defs>
+    <linearGradient id="dividerGold" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d6a44c" stop-opacity="0"/>
+      <stop offset="0.15" stop-color="#d6a44c" stop-opacity="0.85"/>
+      <stop offset="0.50" stop-color="#d6a44c" stop-opacity="1"/>
+      <stop offset="0.85" stop-color="#d6a44c" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#d6a44c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main fine line -->
+  <path d="M36 22H270" fill="none" stroke="url(#dividerGold)" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M370 22H604" fill="none" stroke="url(#dividerGold)" stroke-width="1.7" stroke-linecap="round"/>
+
+  <!-- Central ornament -->
+  <g fill="none" stroke="#d6a44c" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M320 22c-13.5-11.5-31.5-10-37.5-2.6 7.2 2.1 19.2 2.1 37.5 2.6Z"/>
+    <path d="M320 22c13.5-11.5 31.5-10 37.5-2.6-7.2 2.1-19.2 2.1-37.5 2.6Z"/>
+    <path d="M320 22c-13.5 11.5-31.5 10-37.5 2.6 7.2-2.1 19.2-2.1 37.5-2.6Z"/>
+    <path d="M320 22c13.5 11.5 31.5 10 37.5 2.6-7.2-2.1-19.2-2.1-37.5-2.6Z"/>
+    <path d="M296 22c-12.5-8.5-24-4.8-29 1.2 6.2 1.7 15.8.6 29-1.2Z"/>
+    <path d="M344 22c12.5-8.5 24-4.8 29 1.2-6.2 1.7-15.8.6-29-1.2Z"/>
+  </g>
+
+  <!-- Small centre gem -->
+  <path d="M320 16.7l5.3 5.3-5.3 5.3-5.3-5.3Z" fill="#fffafc" stroke="#d6a44c" stroke-width="1.4"/>
+  <circle cx="320" cy="22" r="1.9" fill="#d6a44c"/>
+</svg>
